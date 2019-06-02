@@ -1,0 +1,18 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/N_BITS_ADD_SUB_MODULE {C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_ADD_SUB_MODULE/TWO_COMPLEMENTER_MODULE.sv}
+vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/N_BITS_ADD_SUB_MODULE {C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_ADD_SUB_MODULE/ONE_COMPLEMENTER_MODULE.sv}
+vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/N_BITS_ADD_SUB_MODULE {C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_ADD_SUB_MODULE/ONE_BIT_ADDER_MODULE.sv}
+vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/N_BITS_ADD_SUB_MODULE {C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_ADD_SUB_MODULE/ADDER_MODULE.sv}
+vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/LOGIC_MODULES {C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_XOR.sv}
+vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/LOGIC_MODULES {C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_OR.sv}
+vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/LOGIC_MODULES {C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_NOT.sv}
+vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/LOGIC_MODULES {C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_AND.sv}
+vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/N_BITS_ADD_SUB_MODULE {C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_ADD_SUB_MODULE/N_BITS_ADD_SUB_MODULE.sv}
+vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE {C:/Users/aaron/Desktop/ARMv4 MODULE/TESTBENCH_MODULE.sv}
+

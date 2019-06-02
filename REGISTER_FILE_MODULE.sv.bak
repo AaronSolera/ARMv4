@@ -1,0 +1,12 @@
+module REGISTER_FILE_MODULE (ADDRS_RN, ADDRS_RM, ADDRS_RD, WRT_DATA, R15_DATA, WRT_ENA, RN_DATA, RM_DATA);
+	
+	genvar r;
+	generate
+		for(r = 0; r < 16; r++) 
+		begin : generate_block_identifier
+			REGISTER_MODULE #(32)
+				REGISTER (CLK, RST, WRITE, IN_DATA, OUT_DATA);
+		end
+	endgenerate
+	
+endmodule 

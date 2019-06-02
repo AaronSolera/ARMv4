@@ -1,0 +1,20 @@
+module EQUAL_COMPARATOR_MODULE #(parameter BITS=10) (ENA, A, B, Y);
+	
+	input logic ENA;
+	input logic [BITS-1:0] A, B;
+	output logic [BITS-1:0] Y;
+	
+	logic [BITS-1:0] W_AND, W_ENA;
+	
+	genvar i;
+	generate
+		for(i=0; i<BITS; i=i+1) begin: generate_block_identifier
+			_XNOR XNOR (A[i], B[i], W_AND[i]);
+		end
+	endgenerate
+	
+	N_INPUTS_AND #(BITS) NIA (W_AND, W_ENA);
+	
+	ENABLE_MODULE #(BITS) EM (W_ENA, ENA, Y);
+	
+endmodule 

@@ -1,0 +1,15 @@
+module FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE (IN, SELECT, OUT);
+	
+	input  logic 		  IN;
+	input  logic [3:0]  SELECT;
+	output logic [15:0] OUT;
+	logic        [3:0]  W_IN;
+	
+	TWO_BITS_SELECT_FOUR_DEMUX_MODULE 
+		(IN, S[3:2], W_IN[0], W_IN[1], W_IN[2], W_IN[3]),
+		(W_IN[0], S[1:0], OUT[0], OUT[1], OUT[2], OUT[3]),
+		(W_IN[1], S[1:0], OUT[4], OUT[5], OUT[6], OUT[7]),
+		(W_IN[2], S[1:0], OUT[8], OUT[9], OUT[10], OUT[11]),
+		(W_IN[3], S[1:0], OUT[12], OUT[13], OUT[14], OUT[15]);
+		
+endmodule 

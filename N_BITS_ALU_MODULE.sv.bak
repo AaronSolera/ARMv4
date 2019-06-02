@@ -1,0 +1,23 @@
+module N_BITS_ALU_MODULE #(parameter BITS = 32) (A, B, S, R, FLAGS);
+	
+	logic input  [BITS-1:0] A, B;
+	logic input  [3:0] S;
+	logic output [BITS-1:0] R;
+	logic output [3:0] FLAGS;
+	logic [15:0] [BITS-1:0] DATA;
+	
+	//Aritmetic functions
+
+	N_BITS_ADD_SUB_MODULE #(BITS) 
+		ADD_SUB (A, B, CIN, SUB, RST, DATA[0]);
+	
+	//Logic functions
+	
+	
+	
+	//Operation selection multiplexor 
+	
+	SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE #(parameter BITS = 3)
+		ALU_MUX (DATA, S, R);
+	
+endmodule 

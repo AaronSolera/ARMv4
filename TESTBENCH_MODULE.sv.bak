@@ -1,0 +1,22 @@
+module TESTBENCH_MODULE;
+	
+	logic [7:0] A, B, RESULT;
+   logic	Cin, SUB, Cout;
+	
+	N_BITS_ADD_SUB_MODULE #(8) NBASM (A, B, Cin, SUB, RESULT, Cout);
+	
+	initial begin
+	
+		A = 8'b00000000; B = 8'b00000000; Cin = 0; SUB = 0; #10
+		A = 8'b00001000; B = 8'b00001000; #10
+		A = 8'b00000010; B = 8'b00001000; #10
+		A = 8'b00000011; B = 8'b00000111; #10
+		
+		A = 8'b00000000; B = 8'b00000000; SUB = 1; #10
+		A = 8'b00001000; B = 8'b00001000; #10
+		A = 8'b00000010; B = 8'b00001000; #10
+		A = 8'b00000111; B = 8'b00000011; #10
+		
+	end
+	
+endmodule 

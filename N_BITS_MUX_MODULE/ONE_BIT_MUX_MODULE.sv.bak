@@ -1,0 +1,12 @@
+module ONE_BIT_MUX_MODULE (A, B, S, R);
+
+	input logic A, B, S;
+	output logic R;
+	logic W_1, W_2, W_3;
+	
+	_NOT NOT (S,W_1);
+	_AND FIRST_AND (A,W_1,W_2);
+	_AND SECOND_AND (B,s,W_3);
+	_OR OR (W_2, W_3, R);
+	
+endmodule 

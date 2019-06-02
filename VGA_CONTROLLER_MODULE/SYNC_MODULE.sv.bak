@@ -1,0 +1,21 @@
+module SYNC_MODULE (COUNT, RST, A, B, C, D, RGB_ENA, CLK);
+
+	input  logic       RST;
+	input  logic [9:0] COUNT, A, B, C, D;
+	output logic       RGB_ENA, CLK;
+	logic        [9:0] X1, X2, X3, X4; 
+	logic              CMP_A, CMP_B, CMP_C, CMP_D, NOT_CMP_D;
+	
+	FULL_N_BITS_SUBTRACTOR_MODULE #(10) 
+		SUB_A (COUNT, A, X1, CLK),
+		SUB_B (COUNT, B, X2, CMP_B),
+		SUB_C (COUNT, C, X3, CMP_C),
+		SUB_D (COUNT, D, X4, CMP_D);
+
+	_NOT 
+		NOT (CMP_D, NOT_CMP_D);
+		
+	_AND
+		AND (CMP_C, NOT_CMP_D, RGB_ENA);
+		
+endmodule 

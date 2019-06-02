@@ -1,0 +1,18 @@
+module TWO_BITS_SELECT_FOUR_DEMUX_MODULE (DATA, S, A, B, C, D);
+	
+	input logic DATA;
+	input logic [1:0]	S;
+	output logic A, B, C, D;
+	logic NOT_A, NOT_B;
+	
+	_NOT 
+		_NOT_A (A, NOT_A),
+		_NOT_B (B, NOT_B);
+		
+	N_INPUTS_AND
+		FISRT_AND  ({DATA, NOT_A, NOT_B}, A),
+		SECOND_AND ({DATA, NOT_B, A},     B),
+		THIRD_AND  ({DATA, NOT_A, B},     C),
+		FOURTH_AND ({DATA, A,     B},     D);
+		
+endmodule 

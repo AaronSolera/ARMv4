@@ -1,0 +1,13 @@
+module FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE #(parameter BITS = 3) (A, B, C, D, SELECT, OUT);
+
+	input logic [BITS-1:0] A, B, C, D;
+	input logic [1:0] SELECT;
+	output logic [BITS-1:0] OUT;
+	logic [BITS-1:0] W_FIRST_MUX, W_SECOND_MUX;
+	
+	N_BITS_ONE_SELECT_MUX_MODULE #(BITS)
+		FIRST_MUX (A, B, SELECT[0], W_FIRST_MUX),
+		SECOND_MUX (C, D, SELECT[0], W_SECOND_MUX),
+		THIRD_MUX (W_FIRST_MUX, W_SECOND_MUX, SELECT[1], OUT);
+	
+endmodule 

@@ -1,0 +1,16 @@
+module COUNTER_MODULE (CLK, RST, RST_DATA, COUNT); 
+	
+	input logic CLK, RST;
+	input logic [15:0] RST_DATA;
+	output logic [15:0] COUNT;
+	logic [15:0] COUNTER;
+	
+	always @(posedge CLK, negedge RST) begin
+		if (!RST) COUNTER <= 16'd0;
+		else if (COUNTER == RST_DATA) COUNTER <= 16'd0;
+		else COUNTER <= COUNTER + 16'd1;
+	end 
+	
+	assign COUNT = COUNTER;
+	
+endmodule 

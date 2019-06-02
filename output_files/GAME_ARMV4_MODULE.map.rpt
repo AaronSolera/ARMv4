@@ -1,0 +1,1247 @@
+Analysis & Elaboration report for GAME_ARMV4_MODULE
+Sat Jun 01 20:22:59 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:MAIN_DEMUX|N_INPUTS_AND:FISRT_AND
+  5. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:MAIN_DEMUX|N_INPUTS_AND:SECOND_AND
+  6. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:MAIN_DEMUX|N_INPUTS_AND:THIRD_AND
+  7. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:MAIN_DEMUX|N_INPUTS_AND:FOURTH_AND
+  8. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:FIRST_DEMUX|N_INPUTS_AND:FISRT_AND
+  9. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:FIRST_DEMUX|N_INPUTS_AND:SECOND_AND
+ 10. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:FIRST_DEMUX|N_INPUTS_AND:THIRD_AND
+ 11. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:FIRST_DEMUX|N_INPUTS_AND:FOURTH_AND
+ 12. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:SECOND_DEMUX|N_INPUTS_AND:FISRT_AND
+ 13. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:SECOND_DEMUX|N_INPUTS_AND:SECOND_AND
+ 14. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:SECOND_DEMUX|N_INPUTS_AND:THIRD_AND
+ 15. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:SECOND_DEMUX|N_INPUTS_AND:FOURTH_AND
+ 16. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:THIRD_DEMUX|N_INPUTS_AND:FISRT_AND
+ 17. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:THIRD_DEMUX|N_INPUTS_AND:SECOND_AND
+ 18. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:THIRD_DEMUX|N_INPUTS_AND:THIRD_AND
+ 19. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:THIRD_DEMUX|N_INPUTS_AND:FOURTH_AND
+ 20. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:FOURTH_DEMUX|N_INPUTS_AND:FISRT_AND
+ 21. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:FOURTH_DEMUX|N_INPUTS_AND:SECOND_AND
+ 22. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:FOURTH_DEMUX|N_INPUTS_AND:THIRD_AND
+ 23. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:FOURTH_DEMUX|N_INPUTS_AND:FOURTH_AND
+ 24. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[0].REGISTER
+ 25. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[1].REGISTER
+ 26. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[2].REGISTER
+ 27. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[3].REGISTER
+ 28. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[4].REGISTER
+ 29. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[5].REGISTER
+ 30. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[6].REGISTER
+ 31. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[7].REGISTER
+ 32. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[8].REGISTER
+ 33. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[9].REGISTER
+ 34. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[10].REGISTER
+ 35. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[11].REGISTER
+ 36. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[12].REGISTER
+ 37. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[13].REGISTER
+ 38. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[14].REGISTER
+ 39. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|N_BITS_ONE_SELECT_MUX_MODULE:NBOSMM
+ 40. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:R15
+ 41. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM
+ 42. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX
+ 43. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX
+ 44. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:FIRST_MUX
+ 45. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:SECOND_MUX
+ 46. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX
+ 47. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX
+ 48. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:FIRST_MUX
+ 49. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:SECOND_MUX
+ 50. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX
+ 51. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX
+ 52. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX
+ 53. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX
+ 54. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:FIRST_MUX
+ 55. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:SECOND_MUX
+ 56. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX
+ 57. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX
+ 58. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:FIRST_MUX
+ 59. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:SECOND_MUX
+ 60. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX
+ 61. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX
+ 62. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX
+ 63. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM
+ 64. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX
+ 65. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX
+ 66. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:FIRST_MUX
+ 67. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:SECOND_MUX
+ 68. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX
+ 69. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX
+ 70. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:FIRST_MUX
+ 71. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:SECOND_MUX
+ 72. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX
+ 73. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX
+ 74. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX
+ 75. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX
+ 76. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:FIRST_MUX
+ 77. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:SECOND_MUX
+ 78. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX
+ 79. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX
+ 80. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:FIRST_MUX
+ 81. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:SECOND_MUX
+ 82. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX
+ 83. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX
+ 84. Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX
+ 85. Analysis & Elaboration Settings
+ 86. Port Connectivity Checks: "REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:R15"
+ 87. Port Connectivity Checks: "REGISTER_FILE_MODULE:RFM"
+ 88. Analysis & Elaboration Messages
+ 89. Analysis & Elaboration Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Sat Jun 01 20:22:59 2019       ;
+; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                 ; GAME_ARMV4_MODULE                           ;
+; Top-level Entity Name         ; TESTBENCH_MODULE                            ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:MAIN_DEMUX|N_INPUTS_AND:FISRT_AND ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                          ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:MAIN_DEMUX|N_INPUTS_AND:SECOND_AND ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:MAIN_DEMUX|N_INPUTS_AND:THIRD_AND ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                          ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:MAIN_DEMUX|N_INPUTS_AND:FOURTH_AND ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:FIRST_DEMUX|N_INPUTS_AND:FISRT_AND ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:FIRST_DEMUX|N_INPUTS_AND:SECOND_AND ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                  ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:FIRST_DEMUX|N_INPUTS_AND:THIRD_AND ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:FIRST_DEMUX|N_INPUTS_AND:FOURTH_AND ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                  ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:SECOND_DEMUX|N_INPUTS_AND:FISRT_AND ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                  ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:SECOND_DEMUX|N_INPUTS_AND:SECOND_AND ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                   ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:SECOND_DEMUX|N_INPUTS_AND:THIRD_AND ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                  ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:SECOND_DEMUX|N_INPUTS_AND:FOURTH_AND ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                   ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:THIRD_DEMUX|N_INPUTS_AND:FISRT_AND ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:THIRD_DEMUX|N_INPUTS_AND:SECOND_AND ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                  ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:THIRD_DEMUX|N_INPUTS_AND:THIRD_AND ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:THIRD_DEMUX|N_INPUTS_AND:FOURTH_AND ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                  ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:FOURTH_DEMUX|N_INPUTS_AND:FISRT_AND ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                  ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:FOURTH_DEMUX|N_INPUTS_AND:SECOND_AND ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                   ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:FOURTH_DEMUX|N_INPUTS_AND:THIRD_AND ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                  ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:FOURTH_DEMUX|N_INPUTS_AND:FOURTH_AND ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                                                   ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[0].REGISTER ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; DATA_SIZE      ; 32    ; Signed Integer                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[1].REGISTER ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; DATA_SIZE      ; 32    ; Signed Integer                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[2].REGISTER ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; DATA_SIZE      ; 32    ; Signed Integer                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[3].REGISTER ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; DATA_SIZE      ; 32    ; Signed Integer                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[4].REGISTER ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; DATA_SIZE      ; 32    ; Signed Integer                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[5].REGISTER ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; DATA_SIZE      ; 32    ; Signed Integer                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[6].REGISTER ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; DATA_SIZE      ; 32    ; Signed Integer                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[7].REGISTER ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; DATA_SIZE      ; 32    ; Signed Integer                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[8].REGISTER ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; DATA_SIZE      ; 32    ; Signed Integer                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[9].REGISTER ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; DATA_SIZE      ; 32    ; Signed Integer                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[10].REGISTER ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; DATA_SIZE      ; 32    ; Signed Integer                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[11].REGISTER ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; DATA_SIZE      ; 32    ; Signed Integer                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[12].REGISTER ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; DATA_SIZE      ; 32    ; Signed Integer                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[13].REGISTER ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; DATA_SIZE      ; 32    ; Signed Integer                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[14].REGISTER ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; DATA_SIZE      ; 32    ; Signed Integer                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|N_BITS_ONE_SELECT_MUX_MODULE:NBOSMM ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:R15 ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; DATA_SIZE      ; 32    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                   ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:FIRST_MUX ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                  ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:SECOND_MUX ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                   ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                  ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:FIRST_MUX ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                   ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:SECOND_MUX ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                   ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                          ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:FIRST_MUX ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                   ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:SECOND_MUX ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                   ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:FIRST_MUX ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:SECOND_MUX ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                   ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:FIRST_MUX ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                  ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:SECOND_MUX ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                   ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                  ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:FIRST_MUX ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                   ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:SECOND_MUX ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                   ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                          ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:FIRST_MUX ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                   ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:SECOND_MUX ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                   ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:FIRST_MUX ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:SECOND_MUX ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:SECOND_MUX|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                                                                                 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RM_SNBIFBSMM|N_BITS_ONE_SELECT_MUX_MODULE:THIRD_MUX ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; BITS           ; 32    ; Signed Integer                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                           ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; TESTBENCH_MODULE   ; GAME_ARMV4_MODULE  ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:R15" ;
++-------+-------+----------+-----------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                       ;
++-------+-------+----------+-----------------------------------------------+
+; WRITE ; Input ; Info     ; Stuck at VCC                                  ;
++-------+-------+----------+-----------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "REGISTER_FILE_MODULE:RFM"                                                              ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; RN_DATA ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; RM_DATA ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sat Jun 01 20:22:17 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off GAME_ARMV4_MODULE -c GAME_ARMV4_MODULE --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file stored_images_decoder.sv
+    Info (12023): Found entity 1: STORED_IMAGES_DECODER File: C:/Users/aaron/Desktop/ARMv4 MODULE/STORED_IMAGES_DECODER.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file graphic_processing_unit.sv
+    Info (12023): Found entity 1: GRAPHIC_PROCESSING_UNIT File: C:/Users/aaron/Desktop/ARMv4 MODULE/GRAPHIC_PROCESSING_UNIT.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file memory_module.sv
+    Info (12023): Found entity 1: MEMORY_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/MEMORY_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file vga_controller_module/counter_module.sv
+    Info (12023): Found entity 1: COUNTER_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/VGA_CONTROLLER_MODULE/COUNTER_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file vga_controller_module/clk_half_div_module.sv
+    Info (12023): Found entity 1: CLK_HALF_DIV_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/VGA_CONTROLLER_MODULE/CLK_HALF_DIV_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file vga_controller_module/area_verificator_module.sv
+    Info (12023): Found entity 1: AREA_VERIFICATOR_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/VGA_CONTROLLER_MODULE/AREA_VERIFICATOR_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file enable_module.sv
+    Info (12023): Found entity 1: ENABLE_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/ENABLE_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file equal_comparator_module.sv
+    Info (12023): Found entity 1: EQUAL_COMPARATOR_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/EQUAL_COMPARATOR_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_bits_demux_module/two_bits_select_four_n_bits_demux_module.sv
+    Info (12023): Found entity 1: TWO_BITS_SELECT_FOUR_N_BITS_DEMUX_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/TWO_BITS_SELECT_FOUR_N_BITS_DEMUX_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_bits_demux_module/two_bits_select_four_demux_module.sv
+    Info (12023): Found entity 1: TWO_BITS_SELECT_FOUR_DEMUX_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/TWO_BITS_SELECT_FOUR_DEMUX_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_bits_subtrator_module/full_one_bit_subtractor_module.sv
+    Info (12023): Found entity 1: FULL_ONE_BIT_SUBTRACTOR_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_SUBTRATOR_MODULE/FULL_ONE_BIT_SUBTRACTOR_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_bits_subtrator_module/full_n_bits_subtractor_module.sv
+    Info (12023): Found entity 1: FULL_N_BITS_SUBTRACTOR_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_SUBTRATOR_MODULE/FULL_N_BITS_SUBTRACTOR_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_bits_mux_module/one_bit_mux_module.sv
+    Info (12023): Found entity 1: ONE_BIT_MUX_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/ONE_BIT_MUX_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_bits_mux_module/n_bits_one_select_mux_module.sv
+    Info (12023): Found entity 1: N_BITS_ONE_SELECT_MUX_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/N_BITS_ONE_SELECT_MUX_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_bits_mux_module/four_n_bits_inputs_two_bits_select_mux_module.sv
+    Info (12023): Found entity 1: FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_bits_add_sub_module/two_complementer_module.sv
+    Info (12023): Found entity 1: TWO_COMPLEMENTER_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_ADD_SUB_MODULE/TWO_COMPLEMENTER_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_bits_add_sub_module/one_complementer_module.sv
+    Info (12023): Found entity 1: ONE_COMPLEMENTER_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_ADD_SUB_MODULE/ONE_COMPLEMENTER_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_bits_add_sub_module/one_bit_adder_module.sv
+    Info (12023): Found entity 1: ONE_BIT_ADDER_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_ADD_SUB_MODULE/ONE_BIT_ADDER_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_bits_add_sub_module/adder_module.sv
+    Info (12023): Found entity 1: ADDER_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_ADD_SUB_MODULE/ADDER_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_modules/n_xor.sv
+    Info (12023): Found entity 1: N_XOR File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/N_XOR.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_modules/n_or.sv
+    Info (12023): Found entity 1: N_OR File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/N_OR.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_modules/n_not.sv
+    Info (12023): Found entity 1: N_NOT File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/N_NOT.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_modules/n_inputs_or.sv
+    Info (12023): Found entity 1: N_INPUTS_OR File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/N_INPUTS_OR.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_modules/n_inputs_and.sv
+    Info (12023): Found entity 1: N_INPUTS_AND File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/N_INPUTS_AND.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_modules/n_bits_logic_shift_right.sv
+    Info (12023): Found entity 1: N_BITS_LOGIC_SHIFT_RIGHT File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/N_BITS_LOGIC_SHIFT_RIGHT.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_modules/n_bits_logic_shift_left.sv
+    Info (12023): Found entity 1: N_BITS_LOGIC_SHIFT_LEFT File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/N_BITS_LOGIC_SHIFT_LEFT.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_modules/n_bits_aritmetic_shift_right.sv
+    Info (12023): Found entity 1: N_BITS_ARITMETIC_SHIFT_RIGHT File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/N_BITS_ARITMETIC_SHIFT_RIGHT.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_modules/n_and.sv
+    Info (12023): Found entity 1: N_AND File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/N_AND.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_modules/_xor.sv
+    Info (12023): Found entity 1: _XOR File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_XOR.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_modules/_xnor.sv
+    Info (12023): Found entity 1: _XNOR File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_XNOR.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_modules/_or.sv
+    Info (12023): Found entity 1: _OR File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_OR.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_modules/_not.sv
+    Info (12023): Found entity 1: _NOT File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_NOT.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_modules/_nor.sv
+    Info (12023): Found entity 1: _NOR File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_NOR.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_modules/_nand.sv
+    Info (12023): Found entity 1: _NAND File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_NAND.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_modules/_and.sv
+    Info (12023): Found entity 1: _AND File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_AND.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_bits_add_sub_module/n_bits_add_sub_module.sv
+    Info (12023): Found entity 1: N_BITS_ADD_SUB_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_ADD_SUB_MODULE/N_BITS_ADD_SUB_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file testbench_module.sv
+    Info (12023): Found entity 1: TESTBENCH_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/TESTBENCH_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_bits_mux_module/eight_n_bits_inputs_three_bits_select_mux_module.sv
+    Info (12023): Found entity 1: EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_bits_mux_module/sixteen_n_bits_inputs_four_bits_select_mux_module.sv
+    Info (12023): Found entity 1: SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_modules/n_bits_aritmetic_shift_left.sv
+    Info (12023): Found entity 1: N_BITS_ARITMETIC_SHIFT_LEFT File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/N_BITS_ARITMETIC_SHIFT_LEFT.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_bits_alu_module.sv
+    Info (12023): Found entity 1: N_BITS_ALU_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_ALU_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file vga_controller_module/sync_module.sv
+    Info (12023): Found entity 1: SYNC_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/VGA_CONTROLLER_MODULE/SYNC_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file vga_controller_module/vga_controller_module.sv
+    Info (12023): Found entity 1: VGA_CONTROLLER_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/VGA_CONTROLLER_MODULE/VGA_CONTROLLER_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bidimentional_cell_array.sv
+    Info (12023): Found entity 1: BIDIMENTIONAL_CELL_ARRAY File: C:/Users/aaron/Desktop/ARMv4 MODULE/BIDIMENTIONAL_CELL_ARRAY.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pixel_graphic_array.sv
+    Info (12023): Found entity 1: PIXEL_GRAPHIC_ARRAY File: C:/Users/aaron/Desktop/ARMv4 MODULE/PIXEL_GRAPHIC_ARRAY.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_bits_demux_module/four_bits_select_sixteen_demux_module.sv
+    Info (12023): Found entity 1: FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file new_instruction_verificator.sv
+    Info (12023): Found entity 1: NEW_INSTRUCTION_VERIFICATOR File: C:/Users/aaron/Desktop/ARMv4 MODULE/NEW_INSTRUCTION_VERIFICATOR.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register_module.sv
+    Info (12023): Found entity 1: REGISTER_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 1
+Warning (10229): Verilog HDL Expression warning at GRAPHIC_CONTROL_UNIT.sv(21): truncated literal to match 5 bits File: C:/Users/aaron/Desktop/ARMv4 MODULE/GRAPHIC_CONTROL_UNIT.sv Line: 21
+Warning (10229): Verilog HDL Expression warning at GRAPHIC_CONTROL_UNIT.sv(22): truncated literal to match 5 bits File: C:/Users/aaron/Desktop/ARMv4 MODULE/GRAPHIC_CONTROL_UNIT.sv Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file graphic_control_unit.sv
+    Info (12023): Found entity 1: GRAPHIC_CONTROL_UNIT File: C:/Users/aaron/Desktop/ARMv4 MODULE/GRAPHIC_CONTROL_UNIT.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file instruction_control_unit.sv
+    Info (12023): Found entity 1: INSTRUCTION_CONTROL_UNIT File: C:/Users/aaron/Desktop/ARMv4 MODULE/INSTRUCTION_CONTROL_UNIT.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register_file_module.sv
+    Info (12023): Found entity 1: REGISTER_FILE_MODULE File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_FILE_MODULE.sv Line: 1
+Info (12127): Elaborating entity "TESTBENCH_MODULE" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at TESTBENCH_MODULE.sv(45): truncated value with size 32 to match size of target (4) File: C:/Users/aaron/Desktop/ARMv4 MODULE/TESTBENCH_MODULE.sv Line: 45
+Warning (10230): Verilog HDL assignment warning at TESTBENCH_MODULE.sv(55): truncated value with size 32 to match size of target (4) File: C:/Users/aaron/Desktop/ARMv4 MODULE/TESTBENCH_MODULE.sv Line: 55
+Info (12128): Elaborating entity "REGISTER_FILE_MODULE" for hierarchy "REGISTER_FILE_MODULE:RFM" File: C:/Users/aaron/Desktop/ARMv4 MODULE/TESTBENCH_MODULE.sv Line: 31
+Info (12128): Elaborating entity "FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE" for hierarchy "REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM" File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_FILE_MODULE.sv Line: 13
+Info (12128): Elaborating entity "TWO_BITS_SELECT_FOUR_DEMUX_MODULE" for hierarchy "REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:MAIN_DEMUX" File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv Line: 9
+Info (12128): Elaborating entity "_NOT" for hierarchy "REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:MAIN_DEMUX|_NOT:_NOT_S0" File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/TWO_BITS_SELECT_FOUR_DEMUX_MODULE.sv Line: 9
+Info (12128): Elaborating entity "N_INPUTS_AND" for hierarchy "REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:MAIN_DEMUX|N_INPUTS_AND:FISRT_AND" File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/TWO_BITS_SELECT_FOUR_DEMUX_MODULE.sv Line: 13
+Info (12128): Elaborating entity "_AND" for hierarchy "REGISTER_FILE_MODULE:RFM|FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE:FBSSDM|TWO_BITS_SELECT_FOUR_DEMUX_MODULE:MAIN_DEMUX|N_INPUTS_AND:FISRT_AND|_AND:FIRST_AND" File: C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/N_INPUTS_AND.sv Line: 7
+Info (12128): Elaborating entity "REGISTER_MODULE" for hierarchy "REGISTER_FILE_MODULE:RFM|REGISTER_MODULE:GENERATE_BLOCK_IDENTIFIER[0].REGISTER" File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_FILE_MODULE.sv Line: 20
+Critical Warning (10237): Verilog HDL warning at REGISTER_MODULE.sv(14): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 14
+Warning (10240): Verilog HDL Always Construct warning at REGISTER_MODULE.sv(9): inferring latch(es) for variable "MEMORY", which holds its previous value in one or more paths through the always construct File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[0]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[1]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[2]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[3]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[4]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[5]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[6]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[7]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[8]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[9]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[10]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[11]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[12]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[13]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[14]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[15]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[16]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[17]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[18]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[19]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[20]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[21]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[22]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[23]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[24]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[25]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[26]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[27]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[28]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[29]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[30]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (10041): Inferred latch for "MEMORY[31]" at REGISTER_MODULE.sv(9) File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv Line: 9
+Info (12128): Elaborating entity "N_BITS_ONE_SELECT_MUX_MODULE" for hierarchy "REGISTER_FILE_MODULE:RFM|N_BITS_ONE_SELECT_MUX_MODULE:NBOSMM" File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_FILE_MODULE.sv Line: 25
+Info (12128): Elaborating entity "ONE_BIT_MUX_MODULE" for hierarchy "REGISTER_FILE_MODULE:RFM|N_BITS_ONE_SELECT_MUX_MODULE:NBOSMM|ONE_BIT_MUX_MODULE:generate_block_identifier[0].OBMM" File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/N_BITS_ONE_SELECT_MUX_MODULE.sv Line: 12
+Info (12128): Elaborating entity "_OR" for hierarchy "REGISTER_FILE_MODULE:RFM|N_BITS_ONE_SELECT_MUX_MODULE:NBOSMM|ONE_BIT_MUX_MODULE:generate_block_identifier[0].OBMM|_OR:FIRST_OR" File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/ONE_BIT_MUX_MODULE.sv Line: 13
+Info (12128): Elaborating entity "SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE" for hierarchy "REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM" File: C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_FILE_MODULE.sv Line: 31
+Info (12128): Elaborating entity "EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE" for hierarchy "REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX" File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE.sv Line: 9
+Info (12128): Elaborating entity "FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE" for hierarchy "REGISTER_FILE_MODULE:RFM|SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE:RN_SNBIFBSMM|EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE:FIRST_MUX|FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE:FIRST_MUX" File: C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE.sv Line: 9
+Info (144001): Generated suppressed messages file C:/Users/aaron/Desktop/ARMv4 MODULE/output_files/GAME_ARMV4_MODULE.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4857 megabytes
+    Info: Processing ended: Sat Jun 01 20:22:59 2019
+    Info: Elapsed time: 00:00:42
+    Info: Total CPU time (on all processors): 00:01:04
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/aaron/Desktop/ARMv4 MODULE/output_files/GAME_ARMV4_MODULE.map.smsg.
+
+

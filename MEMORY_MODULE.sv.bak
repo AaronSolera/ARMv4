@@ -1,0 +1,16 @@
+module MEMORY_MODULE #(parameter DATA_SIZE = 4, ADDRESS_SIZE = 4)(CLK, RST, ADDRESS, WRITE, IN_DATA, OUT_DATA);
+
+	input  logic CLK, WRITE, RST;
+	input  logic [ADDRESS_SIZE-1:0] ADDRESS;
+	input  logic [DATA_SIZE-1:0] IN_DATA;
+	output logic [DATA_SIZE-1:0] OUT_DATA;
+	
+	logic [DATA_SIZE-1:0] MEMORY [0:ADDRESS_SIZE-1];
+	
+	always_ff @(posedge CLK, posedge WRITE, negedge RST) begin
+		if (!RST) MEMORY <= '{default:32'd0};
+		else if (WRITE) MEMORY[ADDRESS] <= IN_DATA;
+		OUT_DATA <= MEMORY[ADDRESS];
+	end
+	
+endmodule 
