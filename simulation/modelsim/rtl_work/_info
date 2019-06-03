@@ -7,54 +7,80 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/aaron/Desktop/ARMv4 MODULE/simulation/modelsim
+Z0 dC:/Users/aaron/Desktop/ARMv4/simulation/modelsim
 v_AND
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1559442392
+Z2 !s110 1559552979
 !i10b 1
 !s100 SoiQQELP@kd:Xh@i`UbcB3
-IZBNZhIljCT3F:j4>^ilk31
+I@6WMA0khKNeBiJnG8]Di91
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 _AND_sv_unit
 S1
 R0
 w1551890200
-8C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_AND.sv
-FC:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_AND.sv
+8C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_AND.sv
+FC:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_AND.sv
 L0 1
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1559442392.000000
-!s107 C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_AND.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES|C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_AND.sv|
+Z5 !s108 1559552979.000000
+!s107 C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_AND.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES|C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_AND.sv|
 !i113 1
 Z6 o-sv -work work
-Z7 !s92 -sv -work work {+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES}
+Z7 !s92 -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES
 Z8 tCvgOpt 0
 n@_@a@n@d
-v_NOT
+v_NOR
 R1
 R2
 !i10b 1
-!s100 @bGgQRB79cEV_;V8PKmJ_0
-II;fR<48J[0n1?S;C5dS:52
+!s100 K@FDUQ;iKDgD3]DlMkzW32
+IS>K`K0QG1nLJdJ6Z;n0aU2
 R3
-!s105 _NOT_sv_unit
+!s105 _NOR_sv_unit
 S1
 R0
-w1552373014
-8C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_NOT.sv
-FC:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_NOT.sv
+w1553702887
+8C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_NOR.sv
+FC:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_NOR.sv
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_NOT.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES|C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_NOT.sv|
+!s107 C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_NOR.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES|C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_NOR.sv|
+!i113 1
+R6
+R7
+R8
+n@_@n@o@r
+v_NOT
+R1
+R2
+!i10b 1
+!s100 @bGgQRB79cEV_;V8PKmJ_0
+IDieQH:<X45YNnWzS``:Ce0
+R3
+!s105 _NOT_sv_unit
+S1
+R0
+w1552373014
+8C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_NOT.sv
+FC:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_NOT.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z9 !s108 1559552978.000000
+!s107 C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_NOT.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES|C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_NOT.sv|
 !i113 1
 R6
 R7
@@ -62,313 +88,521 @@ R8
 n@_@n@o@t
 v_OR
 R1
-R2
+Z10 !s110 1559552978
 !i10b 1
 !s100 7n2RTQPhL`;knWRkX0T;H2
-IT8Gkl<H3J4ZMbh?^`FE?31
+Ie:3K[cnGPAYeFB4M[C`K>1
 R3
 !s105 _OR_sv_unit
 S1
 R0
 w1551890361
-8C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_OR.sv
-FC:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_OR.sv
+8C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_OR.sv
+FC:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_OR.sv
 L0 1
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_OR.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES|C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_OR.sv|
+R9
+!s107 C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_OR.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES|C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_OR.sv|
 !i113 1
 R6
 R7
 R8
 n@_@o@r
-vEIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE
+v_XNOR
 R1
-Z9 !s110 1559442393
+R10
 !i10b 1
-!s100 ej8FOoH3Y9a<0gjLTShOj3
-IWPkWfHQd[8EzJhRj>Qj7T0
+!s100 ;?0_6o9SO_?bS^`fZzM=H3
+IgUDA3Dn4j_QhXV:07AOC`0
 R3
-!s105 EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE_sv_unit
+!s105 _XNOR_sv_unit
 S1
 R0
-w1557607946
-8C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE.sv
-FC:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE.sv
+w1556239899
+8C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_XNOR.sv
+FC:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_XNOR.sv
 L0 1
 R4
 r1
 !s85 0
 31
-Z10 !s108 1559442393.000000
-!s107 C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE|C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE.sv|
+R9
+!s107 C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_XNOR.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES|C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_XNOR.sv|
 !i113 1
 R6
-Z11 !s92 -sv -work work {+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE}
+R7
 R8
-n@e@i@g@h@t_@n_@b@i@t@s_@i@n@p@u@t@s_@t@h@r@e@e_@b@i@t@s_@s@e@l@e@c@t_@m@u@x_@m@o@d@u@l@e
+n@_@x@n@o@r
+v_XOR
+R1
+R10
+!i10b 1
+!s100 MnZ@8EkUjKM0hLEm]E^212
+IHnA]Gd_[Ve6JZ=mD[5j@H3
+R3
+!s105 _XOR_sv_unit
+S1
+R0
+w1551890347
+8C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_XOR.sv
+FC:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_XOR.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_XOR.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES|C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_XOR.sv|
+!i113 1
+R6
+R7
+R8
+n@_@x@o@r
+vAREA_VERIFICATOR_MODULE
+R1
+Z11 !s110 1559552976
+!i10b 1
+!s100 Q:RcUDPh9V<6Zj0hE`bK92
+IIf57=:g_MMTE8F;1D:_oB1
+R3
+!s105 AREA_VERIFICATOR_MODULE_sv_unit
+S1
+R0
+w1559552821
+8C:/Users/aaron/Desktop/ARMv4/AREA_VERIFICATOR_MODULE.sv
+FC:/Users/aaron/Desktop/ARMv4/AREA_VERIFICATOR_MODULE.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z12 !s108 1559552976.000000
+!s107 C:/Users/aaron/Desktop/ARMv4/AREA_VERIFICATOR_MODULE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4|C:/Users/aaron/Desktop/ARMv4/AREA_VERIFICATOR_MODULE.sv|
+!i113 1
+R6
+Z13 !s92 -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4
+R8
+n@a@r@e@a_@v@e@r@i@f@i@c@a@t@o@r_@m@o@d@u@l@e
+vCOUNTER_MODULE
+R1
+R11
+!i10b 1
+!s100 ^fgW1N0Fin@1gi52l6cj10
+IF=SRVG@8]EJMJ;3QCYc<o3
+R3
+!s105 COUNTER_MODULE_sv_unit
+S1
+R0
+w1558671452
+8C:/Users/aaron/Desktop/ARMv4/VGA_CONTROLLER_MODULE/COUNTER_MODULE.sv
+FC:/Users/aaron/Desktop/ARMv4/VGA_CONTROLLER_MODULE/COUNTER_MODULE.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/aaron/Desktop/ARMv4/VGA_CONTROLLER_MODULE/COUNTER_MODULE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4/VGA_CONTROLLER_MODULE|C:/Users/aaron/Desktop/ARMv4/VGA_CONTROLLER_MODULE/COUNTER_MODULE.sv|
+!i113 1
+R6
+!s92 -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/VGA_CONTROLLER_MODULE
+R8
+n@c@o@u@n@t@e@r_@m@o@d@u@l@e
+vEQUAL_COMPARATOR_MODULE
+R1
+Z14 !s110 1559552977
+!i10b 1
+!s100 7?jiGnT0H]aBcY]AZC[IO2
+Izf7NHMh^T<I8hhWo7onl_3
+R3
+!s105 EQUAL_COMPARATOR_MODULE_sv_unit
+S1
+R0
+w1559258691
+8C:/Users/aaron/Desktop/ARMv4/EQUAL_COMPARATOR_MODULE.sv
+FC:/Users/aaron/Desktop/ARMv4/EQUAL_COMPARATOR_MODULE.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z15 !s108 1559552977.000000
+!s107 C:/Users/aaron/Desktop/ARMv4/EQUAL_COMPARATOR_MODULE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4|C:/Users/aaron/Desktop/ARMv4/EQUAL_COMPARATOR_MODULE.sv|
+!i113 1
+R6
+R13
+R8
+n@e@q@u@a@l_@c@o@m@p@a@r@a@t@o@r_@m@o@d@u@l@e
 vFOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE
 R1
-R9
+R2
 !i10b 1
 !s100 ;aMFd@QD9JKQf4UjUV8A71
-IT6>nC3LhI7o?2]WgA6TI93
+IV5z;:0LQ[OeX1PLkkj<=U3
 R3
 !s105 FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE_sv_unit
 S1
 R0
 w1558898208
-8C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
-FC:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+8C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+FC:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
 L0 1
 R4
 r1
 !s85 0
 31
-R10
-!s107 C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE|C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv|
+R5
+!s107 C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE|C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv|
 !i113 1
 R6
-Z12 !s92 -sv -work work {+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE}
+Z16 !s92 -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE
 R8
 n@f@o@u@r_@b@i@t@s_@s@e@l@e@c@t_@s@i@x@t@e@e@n_@d@e@m@u@x_@m@o@d@u@l@e
-vFOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE
+vFULL_N_BITS_SUBTRACTOR_MODULE
 R1
-Z13 !s110 1559442391
+R14
 !i10b 1
-!s100 e]LYBI9e8Si[QoZ3z?7gO0
-I?CjjGOSaFPDH:>=QH?37P0
+!s100 hQm155`A7fUckAF`FEZod1
+I?;D<3]O=]N7l[d8?1A7l:0
 R3
-!s105 FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE_sv_unit
+!s105 FULL_N_BITS_SUBTRACTOR_MODULE_sv_unit
 S1
 R0
-w1557554365
-8C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE.sv
-FC:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE.sv
+w1556653158
+8C:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE/FULL_N_BITS_SUBTRACTOR_MODULE.sv
+FC:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE/FULL_N_BITS_SUBTRACTOR_MODULE.sv
 L0 1
 R4
 r1
 !s85 0
 31
-Z14 !s108 1559442391.000000
-!s107 C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE|C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE.sv|
+R15
+!s107 C:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE/FULL_N_BITS_SUBTRACTOR_MODULE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE|C:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE/FULL_N_BITS_SUBTRACTOR_MODULE.sv|
 !i113 1
 R6
-R11
+Z17 !s92 -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE
 R8
-n@f@o@u@r_@n_@b@i@t@s_@i@n@p@u@t@s_@t@w@o_@b@i@t@s_@s@e@l@e@c@t_@m@u@x_@m@o@d@u@l@e
+n@f@u@l@l_@n_@b@i@t@s_@s@u@b@t@r@a@c@t@o@r_@m@o@d@u@l@e
+vFULL_ONE_BIT_SUBTRACTOR_MODULE
+R1
+R14
+!i10b 1
+!s100 JL_l4==0EZ>AQ^jibY7GX1
+IQNURin]cNlZF=SINhACk72
+R3
+!s105 FULL_ONE_BIT_SUBTRACTOR_MODULE_sv_unit
+S1
+R0
+w1556496805
+8C:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE/FULL_ONE_BIT_SUBTRACTOR_MODULE.sv
+FC:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE/FULL_ONE_BIT_SUBTRACTOR_MODULE.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE/FULL_ONE_BIT_SUBTRACTOR_MODULE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE|C:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE/FULL_ONE_BIT_SUBTRACTOR_MODULE.sv|
+!i113 1
+R6
+R17
+R8
+n@f@u@l@l_@o@n@e_@b@i@t_@s@u@b@t@r@a@c@t@o@r_@m@o@d@u@l@e
+vGRAPHIC_INSTRUCTION_MEMORY_MODULE
+R1
+Z18 !s110 1559552980
+!i10b 1
+!s100 4Aii>]jNJ:HD1]SeiaFgo2
+IDzzTnWjC<_9n59D8FYfjk1
+R3
+!s105 GRAPHIC_INSTRUCTION_MEMORY_MODULE_sv_unit
+S1
+R0
+w1559551641
+8C:/Users/aaron/Desktop/ARMv4/GRAPHIC_INSTRUCTION_MEMORY_MODULE.sv
+FC:/Users/aaron/Desktop/ARMv4/GRAPHIC_INSTRUCTION_MEMORY_MODULE.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z19 !s108 1559552980.000000
+!s107 C:/Users/aaron/Desktop/ARMv4/GRAPHIC_INSTRUCTION_MEMORY_MODULE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4|C:/Users/aaron/Desktop/ARMv4/GRAPHIC_INSTRUCTION_MEMORY_MODULE.sv|
+!i113 1
+R6
+R13
+R8
+n@g@r@a@p@h@i@c_@i@n@s@t@r@u@c@t@i@o@n_@m@e@m@o@r@y_@m@o@d@u@l@e
+vGRAPHIC_REGISTER_MODULE
+R1
+R18
+!i10b 1
+!s100 ofW[:TEQETi>gYd[Ri]Zo0
+IN`Y2M?ViT3BV2VaT2dQ2m0
+R3
+!s105 GRAPHIC_REGISTER_MODULE_sv_unit
+S1
+R0
+w1559552001
+8C:/Users/aaron/Desktop/ARMv4/GRAPHIC_REGISTER_MODULE.sv
+FC:/Users/aaron/Desktop/ARMv4/GRAPHIC_REGISTER_MODULE.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/aaron/Desktop/ARMv4/GRAPHIC_REGISTER_MODULE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4|C:/Users/aaron/Desktop/ARMv4/GRAPHIC_REGISTER_MODULE.sv|
+!i113 1
+R6
+R13
+R8
+n@g@r@a@p@h@i@c_@r@e@g@i@s@t@e@r_@m@o@d@u@l@e
+vINSTRUCTION_CONTROL_UNIT
+R1
+R18
+!i10b 1
+!s100 lY90jo62:iOmlnaTgzYL^1
+Ic;4Z>[P^ORZ;z;eTe@3WE2
+R3
+!s105 INSTRUCTION_CONTROL_UNIT_sv_unit
+S1
+R0
+w1559549954
+8C:/Users/aaron/Desktop/ARMv4/INSTRUCTION_CONTROL_UNIT.sv
+FC:/Users/aaron/Desktop/ARMv4/INSTRUCTION_CONTROL_UNIT.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/aaron/Desktop/ARMv4/INSTRUCTION_CONTROL_UNIT.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4|C:/Users/aaron/Desktop/ARMv4/INSTRUCTION_CONTROL_UNIT.sv|
+!i113 1
+R6
+R13
+R8
+n@i@n@s@t@r@u@c@t@i@o@n_@c@o@n@t@r@o@l_@u@n@i@t
 vN_BITS_ONE_SELECT_MUX_MODULE
 R1
-R13
+R10
 !i10b 1
 !s100 U3oF9;Z=HYIh3XechK>dB3
-ICzb0I`N?69732YSB=MhSF0
+IB[O2CE>Y@[h@A6SN98Y>A3
 R3
 !s105 N_BITS_ONE_SELECT_MUX_MODULE_sv_unit
 S1
 R0
 w1556477792
-8C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/N_BITS_ONE_SELECT_MUX_MODULE.sv
-FC:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/N_BITS_ONE_SELECT_MUX_MODULE.sv
+8C:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE/N_BITS_ONE_SELECT_MUX_MODULE.sv
+FC:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE/N_BITS_ONE_SELECT_MUX_MODULE.sv
 L0 1
 R4
 r1
 !s85 0
 31
-R14
-!s107 C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/N_BITS_ONE_SELECT_MUX_MODULE.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE|C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/N_BITS_ONE_SELECT_MUX_MODULE.sv|
+R15
+!s107 C:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE/N_BITS_ONE_SELECT_MUX_MODULE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE|C:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE/N_BITS_ONE_SELECT_MUX_MODULE.sv|
 !i113 1
 R6
-R11
+Z20 !s92 -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE
 R8
 n@n_@b@i@t@s_@o@n@e_@s@e@l@e@c@t_@m@u@x_@m@o@d@u@l@e
 vN_INPUTS_AND
 R1
-R2
+R10
 !i10b 1
 !s100 Dm7Z=Ydb=bg?@k8a>LC<n2
-IiB5P5O;R3I4OZ@@;MZmdo1
+I[1iKi_^^=K[if?LUFYDd>3
 R3
 !s105 N_INPUTS_AND_sv_unit
 S1
 R0
 w1556240030
-8C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/N_INPUTS_AND.sv
-FC:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/N_INPUTS_AND.sv
+8C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/N_INPUTS_AND.sv
+FC:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/N_INPUTS_AND.sv
 L0 1
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/N_INPUTS_AND.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES|C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/N_INPUTS_AND.sv|
+R9
+!s107 C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/N_INPUTS_AND.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES|C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/N_INPUTS_AND.sv|
 !i113 1
 R6
 R7
 R8
 n@n_@i@n@p@u@t@s_@a@n@d
-vONE_BIT_MUX_MODULE
-R1
-R13
-!i10b 1
-!s100 i@e7oU4kWOEB`UP[RRfQi3
-I6V`U@FKJka46iF7W@8ckK1
-R3
-!s105 ONE_BIT_MUX_MODULE_sv_unit
-S1
-R0
-w1559017112
-8C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/ONE_BIT_MUX_MODULE.sv
-FC:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/ONE_BIT_MUX_MODULE.sv
-L0 1
-R4
-r1
-!s85 0
-31
-R14
-!s107 C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/ONE_BIT_MUX_MODULE.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE|C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/ONE_BIT_MUX_MODULE.sv|
-!i113 1
-R6
-R11
-R8
-n@o@n@e_@b@i@t_@m@u@x_@m@o@d@u@l@e
-vREGISTER_FILE_MODULE
-R1
-R9
-!i10b 1
-!s100 k4Jg00[ZieOj8jREi9A2I1
-I2hb@SlVZVISZkT:HM=@N61
-R3
-!s105 REGISTER_FILE_MODULE_sv_unit
-S1
-R0
-w1559434346
-8C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_FILE_MODULE.sv
-FC:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_FILE_MODULE.sv
-L0 1
-R4
-r1
-!s85 0
-31
-R10
-!s107 C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_FILE_MODULE.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE|C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_FILE_MODULE.sv|
-!i113 1
-R6
-Z15 !s92 -sv -work work {+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE}
-R8
-n@r@e@g@i@s@t@e@r_@f@i@l@e_@m@o@d@u@l@e
-vREGISTER_MODULE
-R1
-R9
-!i10b 1
-!s100 5`FLAIRUAY^ZgTl;9Q1B:3
-IOUEf[_n]nE59JQbN=_NMY3
-R3
-!s105 REGISTER_MODULE_sv_unit
-S1
-R0
-w1559322636
-8C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv
-FC:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv
-L0 1
-R4
-r1
-!s85 0
-31
-R10
-!s107 C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE|C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv|
-!i113 1
-R6
-R15
-R8
-n@r@e@g@i@s@t@e@r_@m@o@d@u@l@e
-vSIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE
-R1
-R9
-!i10b 1
-!s100 M9:Coh@WkI>oRfM_@6zlP0
-Ib:Slk>kHz<B63HF8XgJ3W2
-R3
-!s105 SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE_sv_unit
-S1
-R0
-w1557639324
-8C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE.sv
-FC:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE.sv
-L0 1
-R4
-r1
-!s85 0
-31
-R10
-!s107 C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE|C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE.sv|
-!i113 1
-R6
-R11
-R8
-n@s@i@x@t@e@e@n_@n_@b@i@t@s_@i@n@p@u@t@s_@f@o@u@r_@b@i@t@s_@s@e@l@e@c@t_@m@u@x_@m@o@d@u@l@e
-vTESTBENCH_MODULE
+vNEW_INSTRUCTION_VERIFICATOR
 R1
 R2
 !i10b 1
-!s100 g4<@dga50KnPelBe5XgMO0
-IJPFQQVMiAba2PA110FZ8S2
+!s100 HhK@<GU>VKZa8Bj90C;E<0
+ITbQhCkCICM<RM;P?TVFOK2
 R3
-!s105 TESTBENCH_MODULE_sv_unit
+!s105 NEW_INSTRUCTION_VERIFICATOR_sv_unit
 S1
 R0
-w1559442381
-8C:/Users/aaron/Desktop/ARMv4 MODULE/TESTBENCH_MODULE.sv
-FC:/Users/aaron/Desktop/ARMv4 MODULE/TESTBENCH_MODULE.sv
+w1559463760
+8C:/Users/aaron/Desktop/ARMv4/NEW_INSTRUCTION_VERIFICATOR.sv
+FC:/Users/aaron/Desktop/ARMv4/NEW_INSTRUCTION_VERIFICATOR.sv
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/aaron/Desktop/ARMv4 MODULE/TESTBENCH_MODULE.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE|C:/Users/aaron/Desktop/ARMv4 MODULE/TESTBENCH_MODULE.sv|
+!s107 C:/Users/aaron/Desktop/ARMv4/NEW_INSTRUCTION_VERIFICATOR.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4|C:/Users/aaron/Desktop/ARMv4/NEW_INSTRUCTION_VERIFICATOR.sv|
 !i113 1
 R6
-R15
-R8
-n@t@e@s@t@b@e@n@c@h_@m@o@d@u@l@e
-vTWO_BITS_SELECT_FOUR_DEMUX_MODULE
-R1
 R13
+R8
+n@n@e@w_@i@n@s@t@r@u@c@t@i@o@n_@v@e@r@i@f@i@c@a@t@o@r
+vONE_BIT_MUX_MODULE
+R1
+R14
 !i10b 1
-!s100 HkB45>oAWz5mocR6?Eh[d1
-I?GSPg_1UId9M<CVn0@f`82
+!s100 i@e7oU4kWOEB`UP[RRfQi3
+I5cHjTVYfLSICb[=GKJ@<>0
 R3
-!s105 TWO_BITS_SELECT_FOUR_DEMUX_MODULE_sv_unit
+!s105 ONE_BIT_MUX_MODULE_sv_unit
 S1
 R0
-w1558898420
-8C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/TWO_BITS_SELECT_FOUR_DEMUX_MODULE.sv
-FC:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/TWO_BITS_SELECT_FOUR_DEMUX_MODULE.sv
+w1559017112
+8C:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE/ONE_BIT_MUX_MODULE.sv
+FC:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE/ONE_BIT_MUX_MODULE.sv
 L0 1
 R4
 r1
 !s85 0
 31
-R14
-!s107 C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/TWO_BITS_SELECT_FOUR_DEMUX_MODULE.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE|C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/TWO_BITS_SELECT_FOUR_DEMUX_MODULE.sv|
+R15
+!s107 C:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE/ONE_BIT_MUX_MODULE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE|C:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE/ONE_BIT_MUX_MODULE.sv|
 !i113 1
 R6
-R12
+R20
+R8
+n@o@n@e_@b@i@t_@m@u@x_@m@o@d@u@l@e
+vREGISTER_MODULE
+R1
+R18
+!i10b 1
+!s100 _CW;A2GFENcdRKUK[;eLZ3
+Ii<2gnNA`@5:HDHh4`6GXO0
+R3
+!s105 REGISTER_MODULE_sv_unit
+S1
+R0
+w1559540233
+8C:/Users/aaron/Desktop/ARMv4/REGISTER_MODULE.sv
+FC:/Users/aaron/Desktop/ARMv4/REGISTER_MODULE.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/aaron/Desktop/ARMv4/REGISTER_MODULE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4|C:/Users/aaron/Desktop/ARMv4/REGISTER_MODULE.sv|
+!i113 1
+R6
+R13
+R8
+n@r@e@g@i@s@t@e@r_@m@o@d@u@l@e
+vSIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE
+R1
+R18
+!i10b 1
+!s100 1S[4hnAG=mkgfCf<kbl>g0
+IJQIXZ7o<X@3f>E7[zO3oY3
+R3
+!s105 SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE_sv_unit
+S1
+R0
+w1559456316
+8C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv
+FC:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE|C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv|
+!i113 1
+R6
+R16
+R8
+n@s@i@x_@b@i@t@s_@s@e@l@e@c@t_@s@i@x@t@y_@f@o@u@r_@d@e@m@u@x_@m@o@d@u@l@e
+vTESTBENCH_MODULE
+R1
+R2
+!i10b 1
+!s100 eGbWoY]9WBXJOMPD?jI>U3
+IT81EDJl@4B[f46V0@4PKz3
+R3
+!s105 TESTBENCH_MODULE_sv_unit
+S1
+R0
+w1559551672
+8C:/Users/aaron/Desktop/ARMv4/TESTBENCH_MODULE.sv
+FC:/Users/aaron/Desktop/ARMv4/TESTBENCH_MODULE.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/aaron/Desktop/ARMv4/TESTBENCH_MODULE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4|C:/Users/aaron/Desktop/ARMv4/TESTBENCH_MODULE.sv|
+!i113 1
+R6
+R13
+R8
+n@t@e@s@t@b@e@n@c@h_@m@o@d@u@l@e
+vTWO_BITS_SELECT_FOUR_DEMUX_MODULE
+R1
+R14
+!i10b 1
+!s100 HkB45>oAWz5mocR6?Eh[d1
+I[j51;<DTeWkf7NXziLEn81
+R3
+!s105 TWO_BITS_SELECT_FOUR_DEMUX_MODULE_sv_unit
+S1
+R0
+w1558898420
+8C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/TWO_BITS_SELECT_FOUR_DEMUX_MODULE.sv
+FC:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/TWO_BITS_SELECT_FOUR_DEMUX_MODULE.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/TWO_BITS_SELECT_FOUR_DEMUX_MODULE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE|C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/TWO_BITS_SELECT_FOUR_DEMUX_MODULE.sv|
+!i113 1
+R6
+R16
 R8
 n@t@w@o_@b@i@t@s_@s@e@l@e@c@t_@f@o@u@r_@d@e@m@u@x_@m@o@d@u@l@e

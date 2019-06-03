@@ -10,174 +10,341 @@
 # Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/N_BITS_DEMUX_MODULE {C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/TWO_BITS_SELECT_FOUR_DEMUX_MODULE.sv}
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4 {C:/Users/aaron/Desktop/ARMv4/AREA_VERIFICATOR_MODULE.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:31 on Jun 01,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE" C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/TWO_BITS_SELECT_FOUR_DEMUX_MODULE.sv 
+# Start time: 03:09:36 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4" C:/Users/aaron/Desktop/ARMv4/AREA_VERIFICATOR_MODULE.sv 
+# -- Compiling module AREA_VERIFICATOR_MODULE
+# 
+# Top level modules:
+# 	AREA_VERIFICATOR_MODULE
+# End time: 03:09:36 on Jun 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/VGA_CONTROLLER_MODULE {C:/Users/aaron/Desktop/ARMv4/VGA_CONTROLLER_MODULE/COUNTER_MODULE.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:09:36 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4/VGA_CONTROLLER_MODULE" C:/Users/aaron/Desktop/ARMv4/VGA_CONTROLLER_MODULE/COUNTER_MODULE.sv 
+# -- Compiling module COUNTER_MODULE
+# 
+# Top level modules:
+# 	COUNTER_MODULE
+# End time: 03:09:37 on Jun 03,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4 {C:/Users/aaron/Desktop/ARMv4/EQUAL_COMPARATOR_MODULE.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:09:37 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4" C:/Users/aaron/Desktop/ARMv4/EQUAL_COMPARATOR_MODULE.sv 
+# -- Compiling module EQUAL_COMPARATOR_MODULE
+# 
+# Top level modules:
+# 	EQUAL_COMPARATOR_MODULE
+# End time: 03:09:37 on Jun 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE {C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/TWO_BITS_SELECT_FOUR_DEMUX_MODULE.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:09:37 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE" C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/TWO_BITS_SELECT_FOUR_DEMUX_MODULE.sv 
 # -- Compiling module TWO_BITS_SELECT_FOUR_DEMUX_MODULE
 # 
 # Top level modules:
 # 	TWO_BITS_SELECT_FOUR_DEMUX_MODULE
-# End time: 20:26:31 on Jun 01,2019, Elapsed time: 0:00:00
+# End time: 03:09:37 on Jun 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/N_BITS_MUX_MODULE {C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/ONE_BIT_MUX_MODULE.sv}
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE {C:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE/FULL_ONE_BIT_SUBTRACTOR_MODULE.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:31 on Jun 01,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE" C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/ONE_BIT_MUX_MODULE.sv 
+# Start time: 03:09:37 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE" C:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE/FULL_ONE_BIT_SUBTRACTOR_MODULE.sv 
+# -- Compiling module FULL_ONE_BIT_SUBTRACTOR_MODULE
+# 
+# Top level modules:
+# 	FULL_ONE_BIT_SUBTRACTOR_MODULE
+# End time: 03:09:37 on Jun 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE {C:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE/FULL_N_BITS_SUBTRACTOR_MODULE.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:09:37 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE" C:/Users/aaron/Desktop/ARMv4/N_BITS_SUBTRATOR_MODULE/FULL_N_BITS_SUBTRACTOR_MODULE.sv 
+# -- Compiling module FULL_N_BITS_SUBTRACTOR_MODULE
+# 
+# Top level modules:
+# 	FULL_N_BITS_SUBTRACTOR_MODULE
+# End time: 03:09:37 on Jun 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE {C:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE/ONE_BIT_MUX_MODULE.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:09:37 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE" C:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE/ONE_BIT_MUX_MODULE.sv 
 # -- Compiling module ONE_BIT_MUX_MODULE
 # 
 # Top level modules:
 # 	ONE_BIT_MUX_MODULE
-# End time: 20:26:31 on Jun 01,2019, Elapsed time: 0:00:00
+# End time: 03:09:37 on Jun 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/N_BITS_MUX_MODULE {C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/N_BITS_ONE_SELECT_MUX_MODULE.sv}
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE {C:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE/N_BITS_ONE_SELECT_MUX_MODULE.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:31 on Jun 01,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE" C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/N_BITS_ONE_SELECT_MUX_MODULE.sv 
+# Start time: 03:09:37 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE" C:/Users/aaron/Desktop/ARMv4/N_BITS_MUX_MODULE/N_BITS_ONE_SELECT_MUX_MODULE.sv 
 # -- Compiling module N_BITS_ONE_SELECT_MUX_MODULE
 # 
 # Top level modules:
 # 	N_BITS_ONE_SELECT_MUX_MODULE
-# End time: 20:26:31 on Jun 01,2019, Elapsed time: 0:00:00
+# End time: 03:09:38 on Jun 03,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/N_BITS_MUX_MODULE {C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE.sv}
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES {C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/N_INPUTS_AND.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:31 on Jun 01,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE" C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE.sv 
-# -- Compiling module FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE
-# 
-# Top level modules:
-# 	FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE
-# End time: 20:26:31 on Jun 01,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/LOGIC_MODULES {C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/N_INPUTS_AND.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:32 on Jun 01,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES" C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/N_INPUTS_AND.sv 
+# Start time: 03:09:38 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES" C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/N_INPUTS_AND.sv 
 # -- Compiling module N_INPUTS_AND
 # 
 # Top level modules:
 # 	N_INPUTS_AND
-# End time: 20:26:32 on Jun 01,2019, Elapsed time: 0:00:00
+# End time: 03:09:38 on Jun 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/LOGIC_MODULES {C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_OR.sv}
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES {C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_XOR.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:32 on Jun 01,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES" C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_OR.sv 
+# Start time: 03:09:38 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES" C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_XOR.sv 
+# -- Compiling module _XOR
+# 
+# Top level modules:
+# 	_XOR
+# End time: 03:09:38 on Jun 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES {C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_XNOR.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:09:38 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES" C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_XNOR.sv 
+# -- Compiling module _XNOR
+# 
+# Top level modules:
+# 	_XNOR
+# End time: 03:09:38 on Jun 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES {C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_OR.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:09:38 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES" C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_OR.sv 
 # -- Compiling module _OR
 # 
 # Top level modules:
 # 	_OR
-# End time: 20:26:32 on Jun 01,2019, Elapsed time: 0:00:00
+# End time: 03:09:38 on Jun 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/LOGIC_MODULES {C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_NOT.sv}
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES {C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_NOT.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:32 on Jun 01,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES" C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_NOT.sv 
+# Start time: 03:09:38 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES" C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_NOT.sv 
 # -- Compiling module _NOT
 # 
 # Top level modules:
 # 	_NOT
-# End time: 20:26:32 on Jun 01,2019, Elapsed time: 0:00:00
+# End time: 03:09:39 on Jun 03,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/LOGIC_MODULES {C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_AND.sv}
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES {C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_NOR.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:32 on Jun 01,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES" C:/Users/aaron/Desktop/ARMv4 MODULE/LOGIC_MODULES/_AND.sv 
+# Start time: 03:09:39 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES" C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_NOR.sv 
+# -- Compiling module _NOR
+# 
+# Top level modules:
+# 	_NOR
+# End time: 03:09:39 on Jun 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES {C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_AND.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:09:39 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES" C:/Users/aaron/Desktop/ARMv4/LOGIC_MODULES/_AND.sv 
 # -- Compiling module _AND
 # 
 # Top level modules:
 # 	_AND
-# End time: 20:26:32 on Jun 01,2019, Elapsed time: 0:00:00
+# End time: 03:09:39 on Jun 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE {C:/Users/aaron/Desktop/ARMv4 MODULE/TESTBENCH_MODULE.sv}
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4 {C:/Users/aaron/Desktop/ARMv4/TESTBENCH_MODULE.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:32 on Jun 01,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE" C:/Users/aaron/Desktop/ARMv4 MODULE/TESTBENCH_MODULE.sv 
+# Start time: 03:09:39 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4" C:/Users/aaron/Desktop/ARMv4/TESTBENCH_MODULE.sv 
 # -- Compiling module TESTBENCH_MODULE
 # 
 # Top level modules:
 # 	TESTBENCH_MODULE
-# End time: 20:26:33 on Jun 01,2019, Elapsed time: 0:00:01
+# End time: 03:09:39 on Jun 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/N_BITS_MUX_MODULE {C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE.sv}
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE {C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:33 on Jun 01,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE" C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE.sv 
-# -- Compiling module EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE
-# 
-# Top level modules:
-# 	EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE
-# End time: 20:26:33 on Jun 01,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/N_BITS_MUX_MODULE {C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:33 on Jun 01,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE" C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_MUX_MODULE/SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE.sv 
-# -- Compiling module SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE
-# 
-# Top level modules:
-# 	SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE
-# End time: 20:26:33 on Jun 01,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE/N_BITS_DEMUX_MODULE {C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:33 on Jun 01,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE" C:/Users/aaron/Desktop/ARMv4 MODULE/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv 
+# Start time: 03:09:39 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE" C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv 
 # -- Compiling module FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE
 # 
 # Top level modules:
 # 	FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE
-# End time: 20:26:33 on Jun 01,2019, Elapsed time: 0:00:00
+# End time: 03:09:39 on Jun 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE {C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv}
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4 {C:/Users/aaron/Desktop/ARMv4/NEW_INSTRUCTION_VERIFICATOR.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:33 on Jun 01,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE" C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_MODULE.sv 
+# Start time: 03:09:39 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4" C:/Users/aaron/Desktop/ARMv4/NEW_INSTRUCTION_VERIFICATOR.sv 
+# -- Compiling module NEW_INSTRUCTION_VERIFICATOR
+# 
+# Top level modules:
+# 	NEW_INSTRUCTION_VERIFICATOR
+# End time: 03:09:39 on Jun 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4 {C:/Users/aaron/Desktop/ARMv4/REGISTER_MODULE.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:09:40 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4" C:/Users/aaron/Desktop/ARMv4/REGISTER_MODULE.sv 
 # -- Compiling module REGISTER_MODULE
 # 
 # Top level modules:
 # 	REGISTER_MODULE
-# End time: 20:26:33 on Jun 01,2019, Elapsed time: 0:00:00
+# End time: 03:09:40 on Jun 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4\ MODULE {C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_FILE_MODULE.sv}
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4 {C:/Users/aaron/Desktop/ARMv4/INSTRUCTION_CONTROL_UNIT.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:33 on Jun 01,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4 MODULE" C:/Users/aaron/Desktop/ARMv4 MODULE/REGISTER_FILE_MODULE.sv 
-# -- Compiling module REGISTER_FILE_MODULE
+# Start time: 03:09:40 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4" C:/Users/aaron/Desktop/ARMv4/INSTRUCTION_CONTROL_UNIT.sv 
+# -- Compiling module INSTRUCTION_CONTROL_UNIT
 # 
 # Top level modules:
-# 	REGISTER_FILE_MODULE
-# End time: 20:26:33 on Jun 01,2019, Elapsed time: 0:00:00
+# 	INSTRUCTION_CONTROL_UNIT
+# End time: 03:09:40 on Jun 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4 {C:/Users/aaron/Desktop/ARMv4/GRAPHIC_INSTRUCTION_MEMORY_MODULE.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:09:40 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4" C:/Users/aaron/Desktop/ARMv4/GRAPHIC_INSTRUCTION_MEMORY_MODULE.sv 
+# -- Compiling module GRAPHIC_INSTRUCTION_MEMORY_MODULE
+# 
+# Top level modules:
+# 	GRAPHIC_INSTRUCTION_MEMORY_MODULE
+# End time: 03:09:40 on Jun 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE {C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:09:40 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE" C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv 
+# -- Compiling module SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE
+# 
+# Top level modules:
+# 	SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE
+# End time: 03:09:40 on Jun 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/aaron/Desktop/ARMv4 {C:/Users/aaron/Desktop/ARMv4/GRAPHIC_REGISTER_MODULE.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:09:40 on Jun 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/aaron/Desktop/ARMv4" C:/Users/aaron/Desktop/ARMv4/GRAPHIC_REGISTER_MODULE.sv 
+# -- Compiling module GRAPHIC_REGISTER_MODULE
+# 
+# Top level modules:
+# 	GRAPHIC_REGISTER_MODULE
+# End time: 03:09:40 on Jun 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.TESTBENCH_MODULE
 # vsim work.TESTBENCH_MODULE 
-# Start time: 20:26:50 on Jun 01,2019
+# Start time: 03:09:45 on Jun 03,2019
 # Loading sv_std.std
 # Loading work.TESTBENCH_MODULE
-# Loading work.REGISTER_FILE_MODULE
+# Loading work.INSTRUCTION_CONTROL_UNIT
+# Loading work.NEW_INSTRUCTION_VERIFICATOR
+# Loading work.EQUAL_COMPARATOR_MODULE
+# Loading work.N_INPUTS_AND
+# Loading work._AND
+# Loading work.REGISTER_MODULE
+# Loading work.COUNTER_MODULE
+# Loading work.GRAPHIC_INSTRUCTION_MEMORY_MODULE
+# Loading work.SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE
 # Loading work.FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE
 # Loading work.TWO_BITS_SELECT_FOUR_DEMUX_MODULE
 # Loading work._NOT
-# Loading work.N_INPUTS_AND
-# Loading work._AND
-# Loading work.N_BITS_ONE_SELECT_MUX_MODULE
-# Loading work.REGISTER_MODULE
-# Loading work.SIXTEEN_N_BITS_INPUTS_FOUR_BITS_SELECT_MUX_MODULE
-# Loading work.EIGHT_N_BITS_INPUTS_THREE_BITS_SELECT_MUX_MODULE
-# Loading work.FOUR_N_BITS_INPUTS_TWO_BITS_SELECT_MUX_MODULE
-# Loading work.ONE_BIT_MUX_MODULE
+# Loading work.GRAPHIC_REGISTER_MODULE
+# Loading work.AREA_VERIFICATOR_MODULE
+# Loading work.FULL_N_BITS_SUBTRACTOR_MODULE
+# Loading work.FULL_ONE_BIT_SUBTRACTOR_MODULE
+# Loading work._XOR
 # Loading work._OR
-# ** Warning: Design size of 5099 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# Loading work._NOR
+# Loading work.N_BITS_ONE_SELECT_MUX_MODULE
+# Loading work._XNOR
+# Loading work.ONE_BIT_MUX_MODULE
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/INSTRUCTION_CONTROL_UNIT.sv(16): [PCDPC] - Port size (16) does not match connection size (6) for port 'COUNTER'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/VGA_CONTROLLER_MODULE/COUNTER_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/NEW_INS_CM File: C:/Users/aaron/Desktop/ARMv4/VGA_CONTROLLER_MODULE/COUNTER_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(11): [PCDPC] - Port size (4) does not match connection size (2) for port 'SELECT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_1 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(11): [PCDPC] - Port size (16) does not match connection size (4) for port 'OUT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_1 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(12): [PCDPC] - Port size (4) does not match connection size (2) for port 'SELECT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_2 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(12): [PCDPC] - Port size (16) does not match connection size (4) for port 'OUT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_2 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(13): [PCDPC] - Port size (4) does not match connection size (2) for port 'SELECT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_3 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(13): [PCDPC] - Port size (16) does not match connection size (4) for port 'OUT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_3 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(14): [PCDPC] - Port size (4) does not match connection size (2) for port 'SELECT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_4 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(14): [PCDPC] - Port size (16) does not match connection size (4) for port 'OUT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_4 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(15): [PCDPC] - Port size (4) does not match connection size (2) for port 'SELECT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_5 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(15): [PCDPC] - Port size (16) does not match connection size (4) for port 'OUT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_5 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(16): [PCDPC] - Port size (4) does not match connection size (2) for port 'SELECT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_6 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(16): [PCDPC] - Port size (16) does not match connection size (4) for port 'OUT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_6 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(17): [PCDPC] - Port size (4) does not match connection size (2) for port 'SELECT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_7 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(17): [PCDPC] - Port size (16) does not match connection size (4) for port 'OUT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_7 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(18): [PCDPC] - Port size (4) does not match connection size (2) for port 'SELECT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_8 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(18): [PCDPC] - Port size (16) does not match connection size (4) for port 'OUT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_8 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(19): [PCDPC] - Port size (4) does not match connection size (2) for port 'SELECT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_9 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(19): [PCDPC] - Port size (16) does not match connection size (4) for port 'OUT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_9 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(20): [PCDPC] - Port size (4) does not match connection size (2) for port 'SELECT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_10 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(20): [PCDPC] - Port size (16) does not match connection size (4) for port 'OUT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_10 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(21): [PCDPC] - Port size (4) does not match connection size (2) for port 'SELECT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_11 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(21): [PCDPC] - Port size (16) does not match connection size (4) for port 'OUT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_11 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(22): [PCDPC] - Port size (4) does not match connection size (2) for port 'SELECT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_12 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(22): [PCDPC] - Port size (16) does not match connection size (4) for port 'OUT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_12 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(23): [PCDPC] - Port size (4) does not match connection size (2) for port 'SELECT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_13 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(23): [PCDPC] - Port size (16) does not match connection size (4) for port 'OUT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_13 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(24): [PCDPC] - Port size (4) does not match connection size (2) for port 'SELECT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_14 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(24): [PCDPC] - Port size (16) does not match connection size (4) for port 'OUT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_14 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(25): [PCDPC] - Port size (4) does not match connection size (2) for port 'SELECT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_15 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(25): [PCDPC] - Port size (16) does not match connection size (4) for port 'OUT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_15 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(26): [PCDPC] - Port size (4) does not match connection size (2) for port 'SELECT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_16 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: (vsim-3015) C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/SIX_BITS_SELECT_SIXTY_FOUR_DEMUX_MODULE.sv(26): [PCDPC] - Port size (16) does not match connection size (4) for port 'OUT'. The port definition is at: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /TESTBENCH_MODULE/ICU/GRAPHIC_INSTRUCTION_MEMORY/SBSSFDM/DEMUX_16 File: C:/Users/aaron/Desktop/ARMv4/N_BITS_DEMUX_MODULE/FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE.sv
+# ** Warning: Design size of 28116 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
 # This may because you are loading cell libraries which are not recommended with
 # the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
 add wave -position end sim:/TESTBENCH_MODULE/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: aaron  Hostname: DESKTOP-NCJRV01  ProcessID: 10964
-#           Attempting to use alternate WLF file "./wlft1x9yi9".
+#           Attempting to use alternate WLF file "./wlft40giyt".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft1x9yi9
+#           Using alternate file: ./wlft40giyt
 run -all
-# End time: 20:27:28 on Jun 01,2019, Elapsed time: 0:00:38
-# Errors: 0, Warnings: 3
+# Break key hit
+# Simulation stop requested.
+# End time: 03:12:10 on Jun 03,2019, Elapsed time: 0:02:25
+# Errors: 0, Warnings: 36
