@@ -1,5 +1,5 @@
-module ALU_DECODER(input logic Funct[4:0], ALUOp,
-						 output logic ALUControl[1:0], FlagW[1:0]);
+module ALU_DECODER(input logic [4:0] Funct, input logic ALUOp,
+						 output logic [1:0] ALUControl, FlagW);
 	
 	always @ *
 	

@@ -1,5 +1,5 @@
 module MAIN_DECODER(input logic [1:0] Op, input logic Funct0, Funct5,
-							output logic Branch, RegW, MemW, MemToReg, ALUScr, ALUOp,
+							output logic Branch, RegW, MemW, MemToReg, ALUSrc, ALUOp,
 							output logic [1:0] ImmSrc, RegSrc);
 							
 	
@@ -12,7 +12,7 @@ module MAIN_DECODER(input logic [1:0] Op, input logic Funct0, Funct5,
 				RegW = 1;
 				MemW = 0;
 				MemToReg = 0;
-				ALUScr = 0;
+				ALUSrc = 0;
 				ALUOp = 1;
 				
 				ImmSrc = 2'b00;
@@ -23,7 +23,7 @@ module MAIN_DECODER(input logic [1:0] Op, input logic Funct0, Funct5,
 				RegW = 1;
 				MemW = 0;
 				MemToReg = 0;
-				ALUScr = 1;
+				ALUSrc = 1;
 				ALUOp = 1;
 				
 				ImmSrc = 2'b00;
@@ -34,7 +34,7 @@ module MAIN_DECODER(input logic [1:0] Op, input logic Funct0, Funct5,
 				RegW = 0;
 				MemW = 1;
 				MemToReg = 0;
-				ALUScr = 1;
+				ALUSrc = 1;
 				ALUOp = 0;
 				
 				ImmSrc = 2'b01;
@@ -45,7 +45,7 @@ module MAIN_DECODER(input logic [1:0] Op, input logic Funct0, Funct5,
 				RegW = 1;
 				MemW = 0;
 				MemToReg = 1;
-				ALUScr = 1;
+				ALUSrc = 1;
 				ALUOp = 0;
 				
 				ImmSrc = 2'b01;
@@ -56,7 +56,7 @@ module MAIN_DECODER(input logic [1:0] Op, input logic Funct0, Funct5,
 				RegW = 0;
 				MemW = 0;
 				MemToReg = 0;
-				ALUScr = 1;
+				ALUSrc = 1;
 				ALUOp = 0;
 				
 				ImmSrc = 2'b10;

@@ -1,4 +1,4 @@
-module PC_LOGIC(input logic Rd[3:0], Branch, RegW,
+module PC_LOGIC(input logic [3:0] Rd, input logic Branch, RegW,
 					 output logic PCS);
 	
 	logic quince = 0;
