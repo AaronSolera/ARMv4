@@ -4,31 +4,179 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "H_SYNC",
+					"name" : "PC[0]",
 					"strict" : false
 				},
 				{
-					"name" : "V_SYNC",
+					"name" : "PC[1]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_CLK",
+					"name" : "PC[2]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_SYNC_N",
+					"name" : "PC[3]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_BLANK_N",
+					"name" : "PC[4]",
 					"strict" : false
 				},
 				{
-					"name" : "RST",
+					"name" : "PC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[15]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[16]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[17]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[18]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[19]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[20]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[21]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[22]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[23]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[24]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[25]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[26]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[27]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[28]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[29]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[30]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[31]",
+					"strict" : false
+				},
+				{
+					"name" : "Flags[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RegSrc[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Instrucion[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Instrucion[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Instrucion[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Instrucion[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Instrucion[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Instrucion[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Instrucion[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Instrucion[15]",
 					"strict" : false
 				},
 				{
 					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "RST",
 					"strict" : false
 				}
 			]

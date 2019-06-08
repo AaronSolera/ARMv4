@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY TESTBENCH_MODULE
+set_global_assignment -name TOP_LEVEL_ENTITY Processorwork
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "00:31:03  MAY 09, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
@@ -81,9 +81,6 @@ set_location_assignment PIN_J14 -to B[7]
 set_location_assignment PIN_AF14 -to CLK
 set_location_assignment PIN_J9 -to G[0]
 set_location_assignment PIN_AB12 -to RST
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name SYSTEMVERILOG_FILE AREA_VERIFICATOR_MODULE.sv
 set_global_assignment -name SYSTEMVERILOG_FILE STORED_IMAGES_DECODER.sv
 set_global_assignment -name SYSTEMVERILOG_FILE MEMORY_MODULE.sv
@@ -138,4 +135,8 @@ set_global_assignment -name SYSTEMVERILOG_FILE N_BITS_DEMUX_MODULE/SIX_BITS_SELE
 set_global_assignment -name SYSTEMVERILOG_FILE N_BITS_DEMUX_MODULE/ONE_BITS_SELECT_TWO_DEMUX_MODULE.sv
 set_global_assignment -name SYSTEMVERILOG_FILE N_BITS_DEMUX_MODULE/FIVE_BITS_SELECT_THIRTY_TWO_DEMUX_MODULE.sv
 set_global_assignment -name SYSTEMVERILOG_FILE GRAPHIC_REGISTER_MODULE.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processorwork.sv
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
