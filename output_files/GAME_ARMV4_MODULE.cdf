@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("C:/Users/aaron/Desktop/ARMv4 MODULE/output_files/") File("GAME_ARMV4_MODULE.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("C:/Users/aaron/Desktop/ARMv4/output_files/") File("GAME_ARMV4_MODULE.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

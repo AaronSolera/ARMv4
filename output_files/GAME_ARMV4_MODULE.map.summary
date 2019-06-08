@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Fri Jun 07 20:26:24 2019
+Analysis & Synthesis Status : Successful - Fri Jun 07 20:43:59 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : GAME_ARMV4_MODULE
-Top-level Entity Name : Processorwork
+Top-level Entity Name : GRAPHIC_PROCESSING_UNIT
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
-Total pins : 78
+Total registers : 22
+Total pins : 63
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

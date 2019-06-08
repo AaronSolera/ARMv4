@@ -1,5 +1,5 @@
 Flow report for GAME_ARMV4_MODULE
-Fri Jun 07 20:26:24 2019
+Fri Jun 07 20:45:46 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,25 +40,25 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Jun 07 20:26:24 2019       ;
+; Flow Status                     ; Successful - Fri Jun 07 20:45:46 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; GAME_ARMV4_MODULE                           ;
-; Top-level Entity Name           ; Processorwork                               ;
+; Top-level Entity Name           ; GRAPHIC_PROCESSING_UNIT                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 78                                          ;
+; Logic utilization (in ALMs)     ; 33 / 32,070 ( < 1 % )                       ;
+; Total registers                 ; 30                                          ;
+; Total pins                      ; 63 / 457 ( 14 % )                           ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
+; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
 ; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
 +---------------------------------+---------------------------------------------+
 
 
@@ -67,30 +67,30 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/07/2019 20:25:14 ;
+; Start date & time ; 06/07/2019 20:40:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; GAME_ARMV4_MODULE   ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                  ;
-+-------------------------------------+----------------------------------------+-------------------+---------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value     ; Entity Name   ; Section Id     ;
-+-------------------------------------+----------------------------------------+-------------------+---------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 53214312460906.155996071307592         ; --                ; --            ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --                ; --            ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>            ; --            ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                ; --            ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --                ; --            ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                ; Processorwork ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                ; Processorwork ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                ; Processorwork ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --                ; --            ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --                ; --            ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                ; --            ; --             ;
-; TOP_LEVEL_ENTITY                    ; Processorwork                          ; GAME_ARMV4_MODULE ; --            ; --             ;
-+-------------------------------------+----------------------------------------+-------------------+---------------+----------------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                            ;
++-------------------------------------+----------------------------------------+-------------------+-------------------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value     ; Entity Name             ; Section Id     ;
++-------------------------------------+----------------------------------------+-------------------+-------------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 44883550818101.155996163907092         ; --                ; --                      ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --                ; --                      ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>            ; --                      ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                ; --                      ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --                ; --                      ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                ; GRAPHIC_PROCESSING_UNIT ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                ; GRAPHIC_PROCESSING_UNIT ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                ; GRAPHIC_PROCESSING_UNIT ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --                ; --                      ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --                ; --                      ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                ; --                      ; --             ;
+; TOP_LEVEL_ENTITY                    ; GRAPHIC_PROCESSING_UNIT                ; GAME_ARMV4_MODULE ; --                      ; --             ;
++-------------------------------------+----------------------------------------+-------------------+-------------------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -98,8 +98,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:06     ; 1.0                     ; 4926 MB             ; 00:01:31                           ;
-; Total                ; 00:01:06     ; --                      ; --                  ; 00:01:31                           ;
+; Analysis & Synthesis ; 00:03:07     ; 1.0                     ; 5120 MB             ; 00:03:26                           ;
+; Fitter               ; 00:01:07     ; 1.0                     ; 6362 MB             ; 00:01:35                           ;
+; Assembler            ; 00:00:14     ; 1.0                     ; 4890 MB             ; 00:00:11                           ;
+; Timing Analyzer      ; 00:00:13     ; 1.0                     ; 5169 MB             ; 00:00:10                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4823 MB             ; 00:00:03                           ;
+; Total                ; 00:04:44     ; --                      ; --                  ; 00:05:25                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -108,7 +112,11 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-0524HV2  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-NCJRV01  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-NCJRV01  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-NCJRV01  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-NCJRV01  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-NCJRV01  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -116,6 +124,10 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off GAME_ARMV4_MODULE -c GAME_ARMV4_MODULE
+quartus_fit --read_settings_files=off --write_settings_files=off GAME_ARMV4_MODULE -c GAME_ARMV4_MODULE
+quartus_asm --read_settings_files=off --write_settings_files=off GAME_ARMV4_MODULE -c GAME_ARMV4_MODULE
+quartus_sta GAME_ARMV4_MODULE -c GAME_ARMV4_MODULE
+quartus_eda --read_settings_files=off --write_settings_files=off GAME_ARMV4_MODULE -c GAME_ARMV4_MODULE
 
 
 

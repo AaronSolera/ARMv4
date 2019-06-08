@@ -1,0 +1,16 @@
+module INSTRUCTION_MEMORY #(parameter N_ENTRIES = 1024) (ADDRESS, INSTRUCTION);
+	
+	input  logic [31:0] ADDRESS;
+	output logic [31:0] INSTRUCTION;
+	
+	parameter FILE = "INSTRUCTIONS.txt";
+	
+	logic [31:0] INSTRUCTIONS [0:N_ENTRIES-1];
+	
+	initial begin
+			$readmemh(FILE, INSTRUCTIONS);
+	end
+	
+	assign INSTRUCTION = INSTRUCTIONS[ADDRESS[9:2]];
+	
+endmodule 

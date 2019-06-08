@@ -2,148 +2,180 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'CLK_HALF_DIV_MODULE:F_DIV|COUNT'
-Slack : -2.529
-TNS   : -24.007
-
 Type  : Slow 1100mV 85C Model Setup 'CLK'
-Slack : -2.294
-TNS   : -2.294
+Slack : -4.377
+TNS   : -4.377
 
-Type  : Slow 1100mV 85C Model Setup 'SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
-Slack : -2.094
-TNS   : -22.298
+Type  : Slow 1100mV 85C Model Setup 'VGA_CONTROLLER_MODULE:VGA_CM|SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
+Slack : -2.648
+TNS   : -35.690
 
-Type  : Slow 1100mV 85C Model Hold 'CLK_HALF_DIV_MODULE:F_DIV|COUNT'
-Slack : 0.116
+Type  : Slow 1100mV 85C Model Setup 'VGA_CONTROLLER_MODULE:VGA_CM|CLK_HALF_DIV_MODULE:F_DIV|COUNT'
+Slack : -2.337
+TNS   : -22.311
+
+Type  : Slow 1100mV 85C Model Hold 'VGA_CONTROLLER_MODULE:VGA_CM|CLK_HALF_DIV_MODULE:F_DIV|COUNT'
+Slack : 0.332
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
-Slack : 0.681
+Type  : Slow 1100mV 85C Model Hold 'VGA_CONTROLLER_MODULE:VGA_CM|SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
+Slack : 0.889
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'CLK'
-Slack : 0.716
+Slack : 2.172
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
-Slack : -0.394
-TNS   : -6.298
+Type  : Slow 1100mV 85C Model Recovery 'CLK'
+Slack : -3.301
+TNS   : -3.301
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLK_HALF_DIV_MODULE:F_DIV|COUNT'
-Slack : -0.394
-TNS   : -5.230
+Type  : Slow 1100mV 85C Model Removal 'CLK'
+Slack : -2.174
+TNS   : -2.174
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -0.803
+TNS   : -2.632
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'VGA_CONTROLLER_MODULE:VGA_CM|SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
 Slack : -0.394
-TNS   : -0.716
+TNS   : -9.328
 
-Type  : Slow 1100mV 0C Model Setup 'CLK_HALF_DIV_MODULE:F_DIV|COUNT'
-Slack : -2.562
-TNS   : -23.444
-
-Type  : Slow 1100mV 0C Model Setup 'SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
-Slack : -2.177
-TNS   : -22.178
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'VGA_CONTROLLER_MODULE:VGA_CM|CLK_HALF_DIV_MODULE:F_DIV|COUNT'
+Slack : -0.394
+TNS   : -5.130
 
 Type  : Slow 1100mV 0C Model Setup 'CLK'
-Slack : -2.146
-TNS   : -2.146
+Slack : -4.262
+TNS   : -4.262
 
-Type  : Slow 1100mV 0C Model Hold 'CLK_HALF_DIV_MODULE:F_DIV|COUNT'
-Slack : 0.215
+Type  : Slow 1100mV 0C Model Setup 'VGA_CONTROLLER_MODULE:VGA_CM|SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
+Slack : -2.643
+TNS   : -36.144
+
+Type  : Slow 1100mV 0C Model Setup 'VGA_CONTROLLER_MODULE:VGA_CM|CLK_HALF_DIV_MODULE:F_DIV|COUNT'
+Slack : -2.374
+TNS   : -22.378
+
+Type  : Slow 1100mV 0C Model Hold 'VGA_CONTROLLER_MODULE:VGA_CM|CLK_HALF_DIV_MODULE:F_DIV|COUNT'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'VGA_CONTROLLER_MODULE:VGA_CM|SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
+Slack : 0.879
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'CLK'
-Slack : 0.644
+Slack : 2.131
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Hold 'SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
-Slack : 0.672
-TNS   : 0.000
+Type  : Slow 1100mV 0C Model Recovery 'CLK'
+Slack : -3.310
+TNS   : -3.310
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
-Slack : -0.394
-TNS   : -6.192
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLK_HALF_DIV_MODULE:F_DIV|COUNT'
-Slack : -0.394
-TNS   : -5.160
+Type  : Slow 1100mV 0C Model Removal 'CLK'
+Slack : -2.089
+TNS   : -2.089
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -0.809
+TNS   : -2.818
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'VGA_CONTROLLER_MODULE:VGA_CM|SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
 Slack : -0.394
-TNS   : -0.706
+TNS   : -9.162
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'VGA_CONTROLLER_MODULE:VGA_CM|CLK_HALF_DIV_MODULE:F_DIV|COUNT'
+Slack : -0.394
+TNS   : -5.288
 
 Type  : Fast 1100mV 85C Model Setup 'CLK'
-Slack : -1.751
-TNS   : -1.751
+Slack : -3.354
+TNS   : -3.354
 
-Type  : Fast 1100mV 85C Model Setup 'CLK_HALF_DIV_MODULE:F_DIV|COUNT'
-Slack : -1.239
-TNS   : -11.336
+Type  : Fast 1100mV 85C Model Setup 'VGA_CONTROLLER_MODULE:VGA_CM|SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
+Slack : -1.373
+TNS   : -15.795
 
-Type  : Fast 1100mV 85C Model Setup 'SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
-Slack : -0.822
-TNS   : -9.175
+Type  : Fast 1100mV 85C Model Setup 'VGA_CONTROLLER_MODULE:VGA_CM|CLK_HALF_DIV_MODULE:F_DIV|COUNT'
+Slack : -1.240
+TNS   : -9.431
 
-Type  : Fast 1100mV 85C Model Hold 'CLK_HALF_DIV_MODULE:F_DIV|COUNT'
-Slack : -0.040
-TNS   : -0.045
+Type  : Fast 1100mV 85C Model Hold 'VGA_CONTROLLER_MODULE:VGA_CM|CLK_HALF_DIV_MODULE:F_DIV|COUNT'
+Slack : 0.022
+TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Hold 'SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
-Slack : 0.356
+Type  : Fast 1100mV 85C Model Hold 'VGA_CONTROLLER_MODULE:VGA_CM|SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
+Slack : 0.462
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'CLK'
-Slack : 0.718
+Slack : 1.914
 TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'CLK'
+Slack : -1.908
+TNS   : -1.908
+
+Type  : Fast 1100mV 85C Model Removal 'CLK'
+Slack : -1.618
+TNS   : -1.618
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLK'
-Slack : -0.319
-TNS   : -0.319
+Slack : -0.702
+TNS   : -2.087
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLK_HALF_DIV_MODULE:F_DIV|COUNT'
-Slack : 0.140
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'VGA_CONTROLLER_MODULE:VGA_CM|SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
+Slack : 0.069
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
-Slack : 0.160
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'VGA_CONTROLLER_MODULE:VGA_CM|CLK_HALF_DIV_MODULE:F_DIV|COUNT'
+Slack : 0.125
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'CLK'
-Slack : -1.424
-TNS   : -1.424
+Slack : -2.911
+TNS   : -2.911
 
-Type  : Fast 1100mV 0C Model Setup 'CLK_HALF_DIV_MODULE:F_DIV|COUNT'
-Slack : -1.132
-TNS   : -9.933
+Type  : Fast 1100mV 0C Model Setup 'VGA_CONTROLLER_MODULE:VGA_CM|SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
+Slack : -1.199
+TNS   : -13.985
 
-Type  : Fast 1100mV 0C Model Setup 'SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
-Slack : -0.761
-TNS   : -8.025
+Type  : Fast 1100mV 0C Model Setup 'VGA_CONTROLLER_MODULE:VGA_CM|CLK_HALF_DIV_MODULE:F_DIV|COUNT'
+Slack : -1.166
+TNS   : -8.630
 
-Type  : Fast 1100mV 0C Model Hold 'CLK_HALF_DIV_MODULE:F_DIV|COUNT'
-Slack : -0.020
-TNS   : -0.020
+Type  : Fast 1100mV 0C Model Hold 'VGA_CONTROLLER_MODULE:VGA_CM|CLK_HALF_DIV_MODULE:F_DIV|COUNT'
+Slack : 0.037
+TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
-Slack : 0.321
+Type  : Fast 1100mV 0C Model Hold 'VGA_CONTROLLER_MODULE:VGA_CM|SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
+Slack : 0.422
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'CLK'
-Slack : 0.469
+Slack : 1.607
 TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'CLK'
+Slack : -1.615
+TNS   : -1.615
+
+Type  : Fast 1100mV 0C Model Removal 'CLK'
+Slack : -1.484
+TNS   : -1.484
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLK'
-Slack : -0.321
-TNS   : -0.321
+Slack : -0.690
+TNS   : -2.070
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLK_HALF_DIV_MODULE:F_DIV|COUNT'
-Slack : 0.141
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'VGA_CONTROLLER_MODULE:VGA_CM|SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
+Slack : 0.100
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'SYNC_MODULE:H_SYNC_MODULE|COUNT[5]'
-Slack : 0.158
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'VGA_CONTROLLER_MODULE:VGA_CM|CLK_HALF_DIV_MODULE:F_DIV|COUNT'
+Slack : 0.126
 TNS   : 0.000
 
 ------------------------------------------------------------

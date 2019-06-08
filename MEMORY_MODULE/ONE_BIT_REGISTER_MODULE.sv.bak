@@ -1,0 +1,32 @@
+module ONE_BIT_REGISTER_MODULE (CLK, RST, WRITE, WRITE_DATA, READ_DATA);
+
+	input  logic CLK, WRITE, RST;
+	input  logic WRITE_DATA;
+	output logic READ_DATA;
+	
+	logic CHANGE;
+	//sequential logic
+	always_ff @(posedge CLK, negedge RST) begin
+		if (!RST) READ_DATA <= 1'b0;
+		else READ_DATA <= CHANGE;
+	end
+	
+	//combinational logic
+	always_comb begin
+		
+		case (WRITE_DATA)
+
+			1'b0: begin
+				if (WRITE) CHANGE = WRITE_DATA;
+				else CHANGE = 1'b0;
+			end
+			1'b1: begin
+				if (WRITE) CHANGE = WRITE_DATA;
+				else CHANGE = 1'b1;
+			end
+			
+		endcase
+		
+	end
+	
+endmodule 

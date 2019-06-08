@@ -1,0 +1,26 @@
+module GRAPHIC_INSTRUCTION_MEMORY_MODULE #(DATA_SIZE = 32) (CLK, RST, ADDRESS, WRITE, IN_DATA, OUT_DATA);
+
+	input  logic CLK, WRITE, RST;
+	input  logic [4:0] ADDRESS;
+	input  logic [DATA_SIZE-1:0] IN_DATA;
+	output logic [DATA_SIZE-1:0] OUT_DATA;
+	
+	logic [15:0] 		  DEMUX_WRITE;
+	logic [63:0] [31:0] REGISTER_DATA;
+	
+	FOUR_BITS_SELECT_SIXTEEN_DEMUX_MODULE 
+		FBSSDM (WRT_ENA, ADDRS_RD, DEMUX_WRITE);
+		
+	genvar r;
+	generate
+		for(r = 0; r < 64; r++) 
+		begin : GENERATE_BLOCK_IDENTIFIER
+			REGISTER_MODULE #(32)
+				REGISTER (CLK, RST, DEMUX_WRITE[r], IN_DATA, REGISTER_DATA[r]);
+		end
+	endgenerate
+				
+	SIXTY_FOUR_N_BITS_INPUTS_SIX_BITS_SELECT_MUX_MODULE #(32) 
+		RN_SNBIFBSMM (REGISTER_DATA, ADDRESS, OUT_DATA);
+		
+endmodule 
